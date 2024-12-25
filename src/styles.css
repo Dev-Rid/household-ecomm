@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.spa{
+    @apply text-center text-red-800 text-xl md:text-xl font-bold
+}
