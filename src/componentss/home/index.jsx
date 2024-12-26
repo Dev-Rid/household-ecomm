@@ -19,6 +19,10 @@ const Home = () => {
         
     }
 
+    const handleClick = (e) =>{
+        e.preventDefault()
+    }
+
 
   return (
     <div className=''>
@@ -180,27 +184,51 @@ const Home = () => {
                 <form action="" className='p-10' id='targetform'>
                     <div className='flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Name <span className='text-red-600'>*</span></label>
-                        <input type="text" className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'/>
+                        <input 
+                            type="text" 
+                            className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            onChange={handleChange}
+                            />
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Phone / Whatsapp Number <span className='text-red-600'>*</span></label>
-                        <input type="number" className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'/>
+                        <input 
+                            type="number" 
+                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            onChange={handleChange}
+                            />
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold'>Second Number <span className='text-red-600'>*</span></label>
-                        <input type="number" className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'/>
+                        <input 
+                            type="number" 
+                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            onChange={handleChange}
+                            
+                            />
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold'>Your State <span className='text-red-600'>*</span></label>
-                        <input type="text" className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'/>
+                        <input 
+                            type="text" 
+                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            onChange={handleChange}
+                            
+                            />
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Home/Office Address (Delivery Address) <span className='text-red-600'>*</span></label>
-                        <input type="text" className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] bg-yellow-600' placeholder='Please enter a detailed address'/>
+                        <input 
+                            type="text" 
+                            className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] bg-yellow-600' 
+                            placeholder='Please enter a detailed address'
+                            onChange={handleChange}
+                            
+                            />
                     </div>
                     
                     <div className='pt-5 md:pl-10'>
@@ -228,7 +256,10 @@ const Home = () => {
                             </li>
                        </ul>
                     </div>
-                    <button className='w-full text-center border-2 font-bold border-yellow-400 mt-10 py-3 px-2 rounded-lg  text-gray-400 active:text-green-700 text-md md:text-xl active:bg-yellow-800 '>Submit Your Order</button>
+                    <button 
+                        className='w-full text-center border-2 font-bold border-yellow-400 mt-10 py-3 px-2 rounded-lg  text-gray-400 active:text-green-700 text-md md:text-xl active:bg-yellow-800 '
+                        onClick={handleClick}    
+                    >Submit Your Order</button>
                 </form>
 
                 <div className='text-center' >
