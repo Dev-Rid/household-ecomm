@@ -558,6 +558,10 @@ video {
   margin: auto;
 }
 
+.-ml-5 {
+  margin-left: -1.25rem;
+}
+
 .ml-14 {
   margin-left: 3.5rem;
 }
@@ -656,10 +660,6 @@ video {
 
 .w-\[22rem\] {
   width: 22rem;
-}
-
-.w-\[30rem\] {
-  width: 30rem;
 }
 
 .w-\[50rem\] {
@@ -957,12 +957,6 @@ video {
   text-decoration-line: underline;
 }
 
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -984,6 +978,16 @@ video {
   .spa {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+}
+
+.myInputLabel {
+  margin-left: -1.25rem;
+}
+
+@media (min-width: 768px) {
+  .myInputLabel {
+    margin-left: 0px;
   }
 }
 
@@ -1022,6 +1026,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:ml-6 {
     margin-left: 1.5rem;
   }
@@ -1056,6 +1064,10 @@ video {
 
   .md\:w-\[15rem\] {
     width: 15rem;
+  }
+
+  .md\:w-\[30rem\] {
+    width: 30rem;
   }
 
   .md\:w-\[35rem\] {
