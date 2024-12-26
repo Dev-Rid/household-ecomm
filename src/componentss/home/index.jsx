@@ -13,6 +13,16 @@ const Home = () => {
     }, []);
 
     const [selectedValue, setSelectedValue] = useState("")
+    const [formData, setFormData] = useState({
+        name: "",
+        phoneNumber: "",
+        secondNumber: "",
+        yourState: "",
+        deliveryAddress: "",
+        quantity: ""
+    })
+
+    
 
     const handleChange = (e) => {
         setSelectedValue(e.target.value)
@@ -181,7 +191,8 @@ const Home = () => {
                     <p className='text-center text-sm sm:text-md md:text-xl pt-2 p-4'><span className='text-red-700 font-bold p-3'>
                         IMPORTANT:</span> <span className='font-bold'>PLEASE DO NOT</span> fill the form <span className='underline'>if you dont have the money</span> for it or if you are travelling in the next 2-4 days.</p>
                 </div>
-                <form action="" className='p-10' id='targetform'>
+                {/* onSubmit={handleSubmit} */}
+                <form action="" className='p-10' id='targetform' >
                     <div className='flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Name <span className='text-red-600'>*</span></label>
                         <input 
