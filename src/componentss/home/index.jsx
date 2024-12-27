@@ -110,9 +110,9 @@ const Home = () => {
 
   return (
     <div className=''>
-        <div className='bg-primary-100 h-[112rem] md:h-[85rem]'>
+        <div className='bg-primary-300 md:h-[85rem] lg:h-[88rem] border border-primary400'>
             <div className="pt-0">
-                <marquee behavior="" direction="" className="flex bg-yellow-800 h-[7rem] pt-9">
+                <marquee behavior="" direction="" className="flex bg-primary-400 h-[7rem] pt-9">
                     <span className=' spa' data-aos="fade">Discount Sale + Free Delivery + Payment on delivery </span>
                     <span className='spa ml-14 ' data-aos="fade">Discount Sale + Free Delivery + Payment on delivery </span>
                     <span className='spa ml-14 ' data-aos="fade">Discount Sale + Free Delivery + Payment on delivery </span>
@@ -123,10 +123,10 @@ const Home = () => {
                 </marquee>
 
                 <div className='pt-12'>
-                    <h3 className='text-center text-3xl sm:text-4xl md:text-6xl font-semibold text-gray-100 md:text-gray-400 ' data-aos="fade">
+                    <h3 className='text-center text-3xl pb-8 sm:text-4xl md:text-6xl font-semibold text-primary-400 md:text-primary-400 shadow-lg' data-aos="fade">
                         New Collections
                     </h3>
-                    <p className=' pt-5 text-center text-gray-100 md:text-gray-400 text-md sm:text-xl md:text-3xl font-light' data-aos="fade">
+                    <p className=' pt-5 text-center text-gray-600 md:text-primary-400 text-md sm:text-xl md:text-3xl font-semilight' data-aos="fade">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis libero maiores ducimus dolores consequatur voluptatum repudiandae voluptatem vitae quis iusto?
                     </p>        
 
@@ -138,39 +138,39 @@ const Home = () => {
                             <img
                             src="/src/img/demo.jpg"
                             alt=""
-                            className="border rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
-                                <h4>Lorem ipsum dolor</h4>
-                                <a href="" className="underline">
+                                <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
+                                <a href="" className="underline text-gray-600">
                                     Discover
                                 </a>
                             </div>
                         </div>
 
-                        <div className="flex flex-col items-center md:items-start">
+                        <div className="flex pt-8 md:pt-0 flex-col items-center md:items-start">
                             <img
                             src="/src/img/demo.jpg"
                             alt=""
-                            className="border rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
-                                <h4>Lorem ipsum dolor</h4>
-                                <a href="" className="underline">
+                                <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
+                                <a href="" className="underline text-gray-600">
                                     Discover
                                 </a>
                             </div>
                         </div>
 
-                        <div className="flex flex-col items-center md:items-start">
+                        <div className="flex flex-col items-center pt-8 md:pt-0 md:items-start">
                             <img
                             src="/src/img/demo.jpg"
                             alt=""
-                            className="border rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
-                                <h4>Lorem ipsum dolor</h4>
-                                <a href="" className="underline">
+                                <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
+                                <a href="" className="underline text-gray-600">
                                     Discover
                                 </a>
                             </div>
@@ -179,72 +179,67 @@ const Home = () => {
 
                 </div>
 
-                <div className="flex flex-col items-center justify-center min-h-screen pt-30 md:pt-40" data-aos="fade-up">
+                <div className="flex flex-col items-center justify-center min-h-[25rem] md:min-h-[32rem] lg:min-h-[35rem] md:pt-10 lg:pt-40" data-aos="fade-up">
                     <div>
-                        <video src="/src/img/demovid.mp4" className="border rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"></video>
+                        <video src="/src/img/demovid.mp4" className="border-2 border-primary-400 rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"></video>
                     </div>
                     <div className="text-center mt-4">
                         <Link to="target" smooth={true} duration={700}>
-                            <button className="rounded  p-3 md:p-2 text-sm md:text-lg text-gray-100 bg-red-700 active:bg-red-800 duration-200">
+                            <button className="rounded  p-3 md:p-2 text-sm md:text-lg text-gray-200 bg-primary-400 active:bg-primary-700 duration-300">
                                 Yes! I want to order now
                             </button>
                         </Link> 
-                        <p className="mt-2 text-gray-300" data-aos="slide-up">Work smart</p>
+                        <p className="mt-2 text-gray-600" data-aos="slide-up">Work smart</p>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <div className='bg-primary-200 min-h-[200rem]'>
-        {/* min-h-dvh */}
-            <div className="flex items-center justify-center md:min-h-screen" data-aos="fade-up">
-                <div className="pt-1 md:pt-44 w-[50rem] border border-gray-600">
-                    <div className="mt-10">
-                        <img src="/src/img/demo.jpg" alt="bigimg" className='w-[50rem] md:w-[90rem]' />
-                    </div>
-                </div>
+        <div className='bg-primary-300 min-h-[200rem] pt-9 md:pt-10'>
+            <div className="flex justify-center mt-0 md:mt-32 w[50rem]  min-h[30rem] md:min-h[40rem] lg:min-h[45rem] " data-aos="fade-up">
+                <img src="/src/img/demo.jpg" alt="bigimg" className='h-[15rem] md:h-[22rem] lg:h-[25rem] w-[17rem] md:w-[35rem] lg:w-[40rem] border-2 border-primary-400' />
             </div>
 
-            <div className='text-left pl-2 lg:pl-24 pt-10 text-gray-400' data-aos="slide-right">
-                <h4 className='pl-1 font-bold text-md md:text-xl '>Reasons why you will love this product</h4>
-                <p className='pt-5 text-sm md:text-lg'>1. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <p className='text-sm md:text-lg'>2. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <div className='m-12 text-left -pl-[1rem] md:pl-[2rem] lg:pl-[8rem] lg:pl58 text-primary-400' data-aos="slide-right">
+                <h4 className='pl-1 font-bold text-md md:text-2xl text-yellow-600'>Reasons why you will love this product</h4>
+                <p className='pt-4 text-sm md:text-lg text-gray-700'>1. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p className='text-sm md:text-lg text-gray-700'>2. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
 
 
-            <div className='flex flex-col justify-center items-center min-h-screen md:pt-40' data-aos="fade-up">
+            <div className='flex flex-col justify-center items-center min-h-[30rem] md:min-h-[40rem] pt-[1rem] md:pt-[1rem] lg:pt-[1rem]' data-aos="fade-up">
                 <div>
-                    <img src="/src/img/demo.jpg" alt="bigimg" className='border rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]' />
+                    <img src="/src/img/demo.jpg" alt="bigimg" className='border-2 border-primary-400 rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]' />
                 </div>
                 <Link to='targetform' smooth={true} duration={800}>
-                    <button className='rounded p-2 mt-5 text-lg text-gray-100 bg-red-700  active:bg-red-800 duration-200'>Yes, I want to order now</button>
+                    <button className='rounded p-1 md:p-2 mt-5 text-lg md:text-lg text-gray-100 bg-primary-400 hover:bg-yellow-700 duration-200'>Yes, I want to order now</button>
                 </Link>
             </div>
 
       
-            <div className='border-2 rounded-xl m-auto mt-12 w-[17rem] sm:w-[25rem] md:w-[35rem] lg:w-[50rem] h-[40rem] md:h-[44rem] md:min-h-dvh' data-aos="fade-up"> 
-                <div className='h-[6rem] bg-yellow-800'>
+            <div className='border-2 border-primary-400 rounded-xl m-auto mt-12 w-[17rem] sm:w-[25rem] md:w-[35rem] lg:w-[50rem] h-[40rem] md:h-[44rem] md:min-h-dvh' data-aos="fade-up"> 
+                <div className='h-[6rem] bg-primary-400'>
                     <h6 className='text-center py-10 md:py-8 md:p-5 text-xl sm:text-2xl md:text-4xl font-bold text-gray-300'>Massive Discount Today</h6>
                 </div>
 
-                <div className='h-[6rem] md:h-[8rem] bg-yellow-600 '>
-                    <h3 className='text-center p-4 font-semibold text-lg md:text-2xl text-gray-300'>Free Delivery</h3>
-                    <h3 className='text-center font-semibold text-lg md:text-2xl text-gray-300'>Payment on Delivery</h3>
+                <div className='h-[6rem] md:h-[8rem] bg-primary-300 border-b border-primary-400'>
+                    <h3 className='text-center p-4 font-semibold text-lg md:text-2xl text-primary-400'>Free Delivery</h3>
+                    <h3 className='text-center font-semibold text-lg md:text-2xl text-primary-400'>Payment on Delivery</h3>
                 </div>
                 
-                <div className='text-center border-b h-[13rem] md:h-[15rem] pt-6'>
-                    <h4 className='text-xl md:text-3xl font-bold underline'>1 Set</h4>
-                    <h4 className='font-semilight text-lg md:text-2xl'>Original Price <span className='text-red-700 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>00000</span></h4>
-                    <h4 className='font-semibold sm:font-bold text-xl md:text-3xl'>✅Discount Price <span className='text-green-600 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>00000</span></h4>
+                <div className='text-center border-b border-primary-400 h-[13rem] md:h-[15rem] pt-6'>
+                    <h4 className='text-xl text-gray-800 md:text-3xl font-bold underline'>1 Set</h4>
+                    <h4 className='font-semilight text-lg md:text-2xl'>Original Price <span className='text-primary-500 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>00000</span></h4>
+                    <h4 className='font-semibold sm:font-bold text-gray-700 text-xl md:text-3xl'>✅Discount Price <span className='text-green-600 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>00000</span></h4>
                     <p className='text-lg md:text-2xl font-light'>(free delivery)</p>
                     <p className='text-lg md:text-2xl font-light'>(payment on delivery)</p>
                 </div>
 
                 <div className='text-center h-[15rem] pt-6'>
                     <h4 className='text-xl md:text-3xl font-bold underline'>2 Set</h4>
-                    <h4 className='font-semilight text-lg md:text-2xl'>Original Price <span className='text-red-700 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>00000</span></h4>
-                    <h4 className='font-semibold sm:font-bold text-xl md:text-3xl'>✅Discount Price <span className='text-green-600 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>00000</span></h4>
+                    <h4 className='font-semilight text-gray-600 text-lg md:text-2xl'>Original Price <span className='text-primary-500 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>00000</span></h4>
+                    <h4 className='font-semibold text-gray-700 sm:font-bold text-xl md:text-3xl'>✅Discount Price <span className='text-green-600 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>00000</span></h4>
                     <p className='text-lg md:text-2xl font-light'>(free delivery)</p>
                     <p className='text-lg md:text-2xl font-light'>(payment on delivery)</p>
                 </div>
@@ -252,26 +247,26 @@ const Home = () => {
 
                 <div className='text-center p-10'>
                     <Link to='target' smooth={true} duration={700}>
-                        <button className='rounded px-1 md:px-7 py-1 md:py-3 text-lg text-gray-100 bg-green-800 active:bg-red-800 duration-300' >YES, I WANT THIS NOW</button>
+                        <button className='rounded px-1 md:px-7 py-1 md:py-3 text-xl  text-primary-400 active:text-primary-300 bg-primary400 active:bg-primary-400 border-2 border-primary-400 duration-300' >YES, I WANT THIS NOW</button>
                     </Link>
-                    <p className='text-red-700 text-xl md:text-2xl font-bold pt-2'>This Discount Ends Today…</p>
+                    <p className='text-primary-400 text-xl md:text-2xl font-bold pt-2'>This Discount Ends Today…</p>
                 </div>
             </div>
 
-            <div id='target' className='min-h-[60rem] m-auto shadow-4xl bg-yellow-700 mt-52 w-[18rem] sm:w-[30rem] md:w-[35rem] border-2 border-yellow-600 rounded flex-row justify-center'>
-                <div className='text-center bg-yellow-600 '>
-                    <h4 className='text-red-700 text-lg md:text-2xl font-bold pt-4'>HURRY DISCOUNT EXPIRES TODAY</h4>
-                    <p className='text-lg md:text-2xl font-bold text-gray-400 pt-2'>Fill Order Form Below</p>
-                    <p className='text-center text-sm sm:text-md md:text-xl pt-2 p-4'><span className='text-red-700 font-bold p-3'>
-                        IMPORTANT:</span> <span className='font-bold'>PLEASE DO NOT</span> fill the form <span className='underline'>if you dont have the money</span> for it or if you are travelling in the next 2-4 days.</p>
+            <div id='target' className='min-h-[60rem] m-auto shadow-4xl mt-[18rem] md:mt-[20rem] lg:mt-[25rem] w-[18rem] sm:w-[30rem] md:w-[35rem] border-2 border-primary-400 rounded flex-row justify-center'>
+                <div className='text-center bg-primary-400 '>
+                    <h4 className='text-gray-400 text-xl md:text-2xl font-bold pt-4'>HURRY DISCOUNT EXPIRES TODAY</h4>
+                    <p className='text-lg md:text-2xl border-b border-primary-300 font-bold text-gray-400 pt-2'>Fill Order Form Below</p>
+                    <p className='text-center text-gray-400 text-sm sm:text-md md:text-xl pt-2 p-4'><span className='text-yellow-500 font-bold p-3'>
+                        IMPORTANT:</span> <span className='font-bold '>PLEASE DO NOT</span> fill the form <span className='underline'>if you dont have the money</span> for it or if you are travelling in the next 2-4 days.</p>
                 </div>
                 {/* onSubmit={handleSubmit} */}
                 <form action="" className='p-10' id='targetform' onSubmit={handleSubmit}>
                     <div className='flex flex-col myInputLabel'>
-                        <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Name <span className='text-red-600'>*</span></label>
+                        <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your Name <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-primary-400 border-gray-400'
                             name="name"
                             onChange={handleChange}
                             required
@@ -279,10 +274,10 @@ const Home = () => {
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
-                        <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Phone / Whatsapp Number <span className='text-red-600'>*</span></label>
+                        <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your Phone / Whatsapp Number <span className='text-red-600'>*</span></label>
                         <input 
                             type="phoneNumber" 
-                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-primary-400 border-gray-400'
                             name="phoneNumber"
                             onChange={handleChange}
                             required
@@ -290,10 +285,10 @@ const Home = () => {
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
-                        <label htmlFor="" className='text-md md:text-xl font-semibold'>Second Number <span className='text-red-600'>*</span></label>
+                        <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Second Number <span className='text-red-600'>*</span></label>
                         <input 
                             type="number" 
-                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-primary-400 border-gray-400'
                             name="secondNumber"
                             onChange={handleChange}
                             required
@@ -301,10 +296,10 @@ const Home = () => {
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
-                        <label htmlFor="" className='text-md md:text-xl font-semibold'>Your State <span className='text-red-600'>*</span></label>
+                        <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your State <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem]  bg-primary-300 border-4 text-primary-400 border-gray-400'
                             name="yourState"
                             onChange={handleChange}
                             required
@@ -312,10 +307,10 @@ const Home = () => {
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
-                        <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Home/Office Address (Delivery Address) <span className='text-red-600'>*</span></label>
+                        <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your Home/Office Address (Delivery Address) <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] bg-yellow-600' 
+                            className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] text-primary-400 bg-primary-300 border-4 border-gray-400' 
                             name='deliveryAddress'
                             placeholder='Please enter a detailed address'
                             onChange={handleChange}
@@ -323,8 +318,8 @@ const Home = () => {
                         />
                     </div>
                     
-                    <div className='pt-5 md:pl-10'>
-                        <h2 className='text-xl font-semibold'>Quantity</h2>
+                    <div className='pt-5 -pl-50 md:pl-10'>
+                        <h2 className='text-xl font-semibold text-gray-700'>Quantity</h2>
                        <ul>
                             <li className='p-2'>
                                 <input 
@@ -335,7 +330,7 @@ const Home = () => {
                                     checked={selectedValue === "1 set - ₦00,000"}    
                                 />
                                     
-                                <label className='pl-2 font-semibold'>1 set - ₦00,000</label>
+                                <label className='pl-2 font-semibold text-gray-800'>1 set - ₦00,000</label>
                             </li>
                             <li className='p-2'>
                                 <input 
@@ -346,20 +341,20 @@ const Home = () => {
                                     checked={selectedValue === "2 set - ₦00,000"}    
 
                                 />
-                                <label className='pl-2 font-semibold'>2 set - ₦00,000</label>
+                                <label className='pl-2 font-semibold text-gray-700'>2 set - ₦00,000</label>
                             </li>
                        </ul>
                     </div>
                     <button 
-                        className='w-full text-center border-2 font-bold border-yellow-400 mt-10 py-3 px-2 rounded-lg  text-gray-400 active:text-green-700 text-md md:text-xl active:bg-yellow-800 '
+                        className='w-full text-center border-4 font-bold border-primary-400 mt-10 py-3 px-2 rounded-lg  text-primary-400 active:text-primary-300 text-md md:text-xl active:bg-primary-400 '
                         // onClick={handleClick}    
                     >Submit Your Order</button>
                 </form>
 
                 <div className='text-center' >
-                    <h3 className='font-bold'>FOR MORE ENQUIRIES CALL US ON <span className='text-red-700'>07065906546</span></h3>
+                    <h3 className='font-bold'>FOR MORE ENQUIRIES CALL US ON <span className='text-yellow-600'>07065906546</span></h3>
                     <p className='font-semibold'>Or send us a Whatsapp message</p>
-                    <button className='rounded mt-4 px-2 mb-6 md:px-7 py-2 md:py-3 text-sm md:text-lg text-gray-100 bg-green-800 active:bg-red-800 duration-200 '>
+                    <button className='rounded mt-4 px-2 mb-6 md:px-7 py-2 md:py-3 text-sm md:text-lg text-gray-100 active:text-green-700 bg-green-800 active:bg-primary-300 active:border-2 active:border-green-800 duration-200 '>
                         <a href="http://wa.me/2347065906546" >CHAT US ON WHATSAPP</a>
                     </button>
 
@@ -367,9 +362,9 @@ const Home = () => {
             </div>
 
             
-            <div className='text-center flex-col justify-center items-center pt-14'>
-                <h3 className='font-bold text-2xl'>DISCLAIMER</h3>
-                <p className='leading-6 p-2 font-semibold'>This site is not a part of the Facebook website, Facebook Inc. 
+            <div className='flex-row justify-center pt-14'>
+                <h3 className='font-bold text-xl md:text-2xl text-center text-gray-600'>DISCLAIMER</h3>
+                <p className='leading6 p-2 font-semibold text-center text-gray-500 w[50rem] text-sm md:text-xl'>This site is not a part of the Facebook website, Facebook Inc. 
                     It is also not part of the Google Website or Alphabet Inc. 
                     Additionally, this site is not endorsed by Facebook or Google in any way.
                     FACEBOOK and GOOGLE is a trademark of FACEBOOK Inc and ALPHABET INC respectively.
