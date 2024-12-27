@@ -13,6 +13,10 @@ const Home = () => {
     }, []);
 
     const [selectedValue, setSelectedValue] = useState("")
+    // const [errorMessage, setErrorMessage] = useState("")
+    // const [responseMessage, setResponseMessage] = useState("")
+
+
     const [formData, setFormData] = useState({
         name: "",
         phoneNumber: "",
@@ -22,16 +26,86 @@ const Home = () => {
         quantity: ""
     })
 
-    
+
 
     const handleChange = (e) => {
+        console.log(
         setSelectedValue(e.target.value)
-        
+
+        )
+        setFormData({  
+            ...formData, 
+            [e.target.name]: e.target.value
+        })
     }
 
-    const handleClick = (e) =>{
+    const handleSubmit = async (e) => {
         e.preventDefault()
+        try {
+            const response = await fetch("http://localhost:3002/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData) 
+            })
+
+            // | text and data response |
+            const data = await response.json()
+            console.log(data)   
+            if (data.success) {
+                alert(data.message)
+            } else{
+                alert("Failed to place order")
+            }
+
+            // | text response |
+            // const text = await response.text()
+            // console.log(text)
+            // const textData = JSON.parse(text)
+            // console.log(textData)
+            // if(textData.success){
+            //     alert("Order placed successfully")
+            // } else {
+            //     alert("Failed to place order")
+            // }
+
+        } catch (error) {
+            console.log("Error:", error)
+            alert("An error occurred while placing the order.");
+        }
+
     }
+
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault()
+  
+    //         const response = await fetch("http://localhost:3002/send-email", {
+    //             method: "POST",
+    //             headers: { "Content-Type": "application/json" },
+    //             body: JSON.stringify(formData) 
+    //         })
+
+
+    //         const text = await response.text();
+    //         // console.log("Raw response:", text);
+
+    //     try {
+    //         const data = JSON.parse(text)
+    //         const res = await response.json()
+    //         console.log(res.success)
+            
+            
+    //         if(data.success){
+    //             alert("Order placed successfully")
+    //         } else {
+    //             alert("Failed to place order")
+    //         }
+    //     } catch (error) {
+    //         console.log("Error:", error)
+    //     }
+
+    // }
+
 
 
   return (
@@ -192,23 +266,27 @@ const Home = () => {
                         IMPORTANT:</span> <span className='font-bold'>PLEASE DO NOT</span> fill the form <span className='underline'>if you dont have the money</span> for it or if you are travelling in the next 2-4 days.</p>
                 </div>
                 {/* onSubmit={handleSubmit} */}
-                <form action="" className='p-10' id='targetform' >
+                <form action="" className='p-10' id='targetform' onSubmit={handleSubmit}>
                     <div className='flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Name <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
                             className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            name="name"
                             onChange={handleChange}
-                            />
+                            required
+                        />
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold'>Your Phone / Whatsapp Number <span className='text-red-600'>*</span></label>
                         <input 
-                            type="number" 
+                            type="phoneNumber" 
                             className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            name="phoneNumber"
                             onChange={handleChange}
-                            />
+                            required
+                        />
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
@@ -216,9 +294,10 @@ const Home = () => {
                         <input 
                             type="number" 
                             className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            name="secondNumber"
                             onChange={handleChange}
-                            
-                            />
+                            required
+                        />
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
@@ -226,9 +305,10 @@ const Home = () => {
                         <input 
                             type="text" 
                             className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-yellow-600'
+                            name="yourState"
                             onChange={handleChange}
-                            
-                            />
+                            required
+                        />
                     </div>
                     
                     <div className='pt-7 flex flex-col myInputLabel'>
@@ -236,10 +316,11 @@ const Home = () => {
                         <input 
                             type="text" 
                             className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] bg-yellow-600' 
+                            name='deliveryAddress'
                             placeholder='Please enter a detailed address'
                             onChange={handleChange}
-                            
-                            />
+                            required
+                        />
                     </div>
                     
                     <div className='pt-5 md:pl-10'>
@@ -250,6 +331,7 @@ const Home = () => {
                                     type="radio" 
                                     value="1 set - ₦00,000"
                                     onChange={handleChange}
+                                    name='quantity'
                                     checked={selectedValue === "1 set - ₦00,000"}    
                                 />
                                     
@@ -260,6 +342,7 @@ const Home = () => {
                                     type="radio" 
                                     value="2 set - ₦00,000"
                                     onChange={handleChange}
+                                    name='quantity'
                                     checked={selectedValue === "2 set - ₦00,000"}    
 
                                 />
@@ -269,14 +352,17 @@ const Home = () => {
                     </div>
                     <button 
                         className='w-full text-center border-2 font-bold border-yellow-400 mt-10 py-3 px-2 rounded-lg  text-gray-400 active:text-green-700 text-md md:text-xl active:bg-yellow-800 '
-                        onClick={handleClick}    
+                        // onClick={handleClick}    
                     >Submit Your Order</button>
                 </form>
 
                 <div className='text-center' >
                     <h3 className='font-bold'>FOR MORE ENQUIRIES CALL US ON <span className='text-red-700'>07065906546</span></h3>
                     <p className='font-semibold'>Or send us a Whatsapp message</p>
-                    <button className='rounded mt-2 px-2 md:px-7 py-2 md:py-3 text-sm md:text-lg text-gray-100 bg-green-800 active:bg-red-800 duration-200 '>CHAT US ON WHATSAPP</button>
+                    <button className='rounded mt-4 px-2 mb-6 md:px-7 py-2 md:py-3 text-sm md:text-lg text-gray-100 bg-green-800 active:bg-red-800 duration-200 '>
+                        <a href="http://wa.me/2347065906546" >CHAT US ON WHATSAPP</a>
+                    </button>
+
                 </div>
             </div>
 
