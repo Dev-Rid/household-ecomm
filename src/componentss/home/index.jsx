@@ -13,8 +13,6 @@ const Home = () => {
     }, []);
 
     const [selectedValue, setSelectedValue] = useState("")
-    // const [errorMessage, setErrorMessage] = useState("")
-    // const [responseMessage, setResponseMessage] = useState("")
 
 
     const [formData, setFormData] = useState({
@@ -31,12 +29,13 @@ const Home = () => {
     const handleChange = (e) => {
         console.log(
         setSelectedValue(e.target.value)
-
         )
+
         setFormData({  
             ...formData, 
             [e.target.name]: e.target.value
         })
+
     }
 
     const handleSubmit = async (e) => {
@@ -253,8 +252,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <div id='target' className='min-h-[60rem] m-auto shadow-4xl mt-[18rem] md:mt-[20rem] lg:mt-[25rem] w-[18rem] sm:w-[30rem] md:w-[35rem] border-2 border-primary-400 rounded flex-row justify-center'>
-                <div className='text-center bg-primary-400 '>
+            <div id='target' className='min-h-[60rem] m-auto shadow-2xl mt-[18rem] md:mt-[20rem] lg:mt-[25rem] w-[18rem] sm:w-[30rem] md:w-[35rem] border-2 border-primary-400 rounded flex-row justify-center'>
+                <div className='text-center bg-primary-400 shadow-2xl'>
                     <h4 className='text-gray-400 text-xl md:text-2xl font-bold pt-4'>HURRY DISCOUNT EXPIRES TODAY</h4>
                     <p className='text-lg md:text-2xl border-b border-primary-300 font-bold text-gray-400 pt-2'>Fill Order Form Below</p>
                     <p className='text-center text-gray-400 text-sm sm:text-md md:text-xl pt-2 p-4'><span className='text-yellow-500 font-bold p-3'>
