@@ -11,3 +11,20 @@
 .myInputLabel{
     @apply -ml-5 md:ml-0
 }
+
+/* .no-spinner{
+    @apply 
+} */
+
+
+@layer utilities {
+    /* Custom utility to hide spinners in number inputs */
+    .no-spinner::-webkit-inner-spin-button,
+    .no-spinner::-webkit-outer-spin-button {
+      @apply appearance-none;
+    }
+
+    .no-spinner {
+      -moz-appearance: textfield; /* For Firefox */
+    }
+  }

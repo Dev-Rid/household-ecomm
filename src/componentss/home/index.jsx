@@ -265,7 +265,7 @@ const Home = () => {
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your Name <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-primary-400 border-gray-400'
+                            className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-gray-700 font-semibold border-gray-400'
                             name="name"
                             onChange={handleChange}
                             required
@@ -275,8 +275,8 @@ const Home = () => {
                     <div className='pt-7 flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your Phone / Whatsapp Number <span className='text-red-600'>*</span></label>
                         <input 
-                            type="phoneNumber" 
-                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-primary-400 border-gray-400'
+                            type="number" 
+                            className='no-spinner md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-gray-700 font-semibold border-gray-400'
                             name="phoneNumber"
                             onChange={handleChange}
                             required
@@ -287,7 +287,7 @@ const Home = () => {
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Second Number <span className='text-red-600'>*</span></label>
                         <input 
                             type="number" 
-                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-primary-400 border-gray-400'
+                            className='no-spinner md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-primary-300 border-4 text-gray-700 font-semibold border-gray-400'
                             name="secondNumber"
                             onChange={handleChange}
                             required
@@ -298,7 +298,7 @@ const Home = () => {
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your State <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem]  bg-primary-300 border-4 text-primary-400 border-gray-400'
+                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem]  bg-primary-300 border-4 text-gray-700 font-semibold border-gray-400'
                             name="yourState"
                             onChange={handleChange}
                             required
@@ -309,7 +309,7 @@ const Home = () => {
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your Home/Office Address (Delivery Address) <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] text-primary-400 bg-primary-300 border-4 border-gray-400' 
+                            className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] text-gray-700 font-semibold bg-primary-300 border-4 border-gray-400' 
                             name='deliveryAddress'
                             placeholder='Please enter a detailed address'
                             onChange={handleChange}
@@ -345,7 +345,7 @@ const Home = () => {
                        </ul>
                     </div>
                     <button 
-                        className='w-full text-center border-4 font-bold border-primary-400 mt-10 py-3 px-2 rounded-lg  text-primary-400 active:text-primary-300 text-md md:text-xl active:bg-yellow-700 active:border-primary300 '
+                        className='w-full text-center border-4 font-bold border-primary-400 mt-10 py-3 px-2 rounded-lg  text-primary-400 active:text-primary-300 text-md md:text-xl active:bg-yellow-700 activeborder hover:border-1 hover:border-primary-300 '
                         // onClick={handleClick}    
                     >Submit Your Order</button>
                 </form>
