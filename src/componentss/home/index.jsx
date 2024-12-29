@@ -180,7 +180,7 @@ const Home = () => {
 
                 <div className="flex flex-col items-center justify-center min-h-[25rem] md:min-h-[32rem] lg:min-h-[35rem] md:pt-10 lg:pt-40" data-aos="fade-up">
                     <div>
-                        <video src="/src/img/demovid.mp4" className="border-2 border-primary-400 rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"></video>
+                        <video src="/src/img/demovid.mp4" className="shadow border-2 border-primary-400 rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"></video>
                     </div>
                     <div className="text-center mt-4">
                         <Link to="target" smooth={true} duration={700}>
@@ -212,13 +212,13 @@ const Home = () => {
                     <img src="/src/img/demo.jpg" alt="bigimg" className='border-2 border-primary-400 rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]' />
                 </div>
                 <Link to='targetform' smooth={true} duration={800}>
-                    <button className='rounded p-1 md:p-2 mt-5 text-lg md:text-lg text-gray-100 bg-primary-400 hover:bg-yellow-700 duration-200'>Yes, I want to order now</button>
+                    <button className='rounded p-1 md:p-2 mt-5 text-lg md:text-lg text-gray-100 bg-primary-400 active:bg-yellow-700 duration-200'>Yes, I want to order now</button>
                 </Link>
             </div>
 
       
             <div className='border-2 border-primary-400 rounded-xl m-auto mt-12 w-[17rem] sm:w-[25rem] md:w-[35rem] lg:w-[50rem] h-[40rem] md:h-[44rem] md:min-h-dvh' data-aos="fade-up"> 
-                <div className='h-[6rem] bg-primary-400'>
+                <div className='h-[6rem] bg-primary-400 rounded-t-md'>
                     <h6 className='text-center py-10 md:py-8 md:p-5 text-xl sm:text-2xl md:text-4xl font-bold text-gray-300'>Massive Discount Today</h6>
                 </div>
 
@@ -345,7 +345,7 @@ const Home = () => {
                        </ul>
                     </div>
                     <button 
-                        className='w-full text-center border-4 font-bold border-primary-400 mt-10 py-3 px-2 rounded-lg  text-primary-400 active:text-primary-300 text-md md:text-xl active:bg-primary-400 '
+                        className='w-full text-center border-4 font-bold border-primary-400 mt-10 py-3 px-2 rounded-lg  text-primary-400 active:text-primary-300 text-md md:text-xl active:bg-yellow-700 active:border-primary300 '
                         // onClick={handleClick}    
                     >Submit Your Order</button>
                 </form>
