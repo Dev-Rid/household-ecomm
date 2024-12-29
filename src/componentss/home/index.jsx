@@ -260,7 +260,7 @@ const Home = () => {
                         IMPORTANT:</span> <span className='font-bold '>PLEASE DO NOT</span> fill the form <span className='underline'>if you dont have the money</span> for it or if you are travelling in the next 2-4 days.</p>
                 </div>
                 {/* onSubmit={handleSubmit} */}
-                <form action="" className='p-10' id='targetform' onSubmit={handleSubmit}>   
+                <form action="" className='p-10' id='targetform' onSubmit={handleSubmit}>
                     <div className='flex flex-col myInputLabel'>
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-gray-700'>Your Name <span className='text-red-600'>*</span></label>
                         <input 
