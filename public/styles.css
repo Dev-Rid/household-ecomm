@@ -1056,9 +1056,9 @@ video {
     @apply 
 } */
 
-.hover\:border-primary-300:hover {
+.hover\:border-primary-400:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(194 194 194 / var(--tw-border-opacity, 1));
+  border-color: rgb(0 15 128 / var(--tw-border-opacity, 1));
 }
 
 .active\:border-2:active {

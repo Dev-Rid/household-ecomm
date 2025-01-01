@@ -345,7 +345,7 @@ const Home = () => {
                        </ul>
                     </div>
                     <button 
-                        className='w-full text-center border-4 font-bold border-primary-400 mt-10 py-3 px-2 rounded-lg  text-primary-400 active:text-primary-300 text-md md:text-xl active:bg-yellow-700 activeborder hover:border-1 hover:border-primary-300 '
+                        className='w-full text-center border-4 font-bold border-primary-400 mt-10 py-3 px-2 rounded-lg  text-primary-400 active:text-primary-300 text-md md:text-xl active:bg-yellow-700 active:border-4 active:border-primary-300 activeborder '
                         // onClick={handleClick}    
                     >Submit Your Order</button>
                 </form>
