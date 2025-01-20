@@ -41,7 +41,7 @@ const Home = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await fetch("http://localhost:3002/send-email", {
+            const response = await fetch("https://householdecommserver.onrender.com/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData) 
