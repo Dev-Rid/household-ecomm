@@ -267,7 +267,7 @@ const Home = () => {
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-primary-600'>Your Name <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-primary-700 border-4 text-primary-600 font-semibold border-primary-600'
+                            className='md:w-[30rem] pl-4 text-xl rounded h-[3rem] bg-primary-700 border-2 text-primary-600 font-semibold border-primary-600'
                             name="name"
                             onChange={handleChange}
                             required
@@ -289,7 +289,7 @@ const Home = () => {
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-primary-600'>Second Number <span className='text-red-600'>*</span></label>
                         <input 
                             type="number" 
-                            className='no-spinner md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-primary-700 border-4 text-primary-600 font-semibold border-primary-600'
+                            className='no-spinner md:w-[22rem] pl-4 text-xl rounded h-[3rem] bg-primary-700 border-2 text-primary-600 font-semibold border-primary-600'
                             name="secondNumber"
                             onChange={handleChange}
                             required
@@ -300,7 +300,7 @@ const Home = () => {
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-primary-600'>Your State <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem]  bg-primary-700 border-4 text-primary-600 font-semibold border-primary-600'
+                            className='md:w-[22rem] pl-4 text-xl rounded h-[3rem]  bg-primary-700 border-2 text-primary-600 font-semibold border-primary-600'
                             name="yourState"
                             onChange={handleChange}
                             required
@@ -311,7 +311,7 @@ const Home = () => {
                         <label htmlFor="" className='text-md md:text-xl font-semibold text-primary-600'>Your Home/Office Address (Delivery Address) <span className='text-red-600'>*</span></label>
                         <input 
                             type="text" 
-                            className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] text-primary-600 font-semibold bg-primary-700 border-4 border-primary-600' 
+                            className='  md:w-[30rem] p-1 sm:pl-3 md:pl-4 text-md md:text-xl rounded h-[3rem] text-primary-600 font-semibold bg-primary-700 border-2 border-primary-600' 
                             name='deliveryAddress'
                             placeholder='Please enter a detailed address'
                             onChange={handleChange}
@@ -347,7 +347,7 @@ const Home = () => {
                        </ul>
                     </div>
                     <button 
-                        className='w-full text-center border-4 font-bold border-primary-600 mt-10 py-3 px-2 rounded-lg  text-primary-600 active:text-primary-300 text-md md:text-xl active:bg-primary-700 active:border-4 active:border-primary-300 activeborder '
+                        className='w-full text-center border-2 font-bold border-primary-600 mt-10 py-3 px-2 rounded-lg  text-primary-600 active:text-primary-300 text-md md:text-xl active:bg-primary-700 active:border-4 active:border-primary-300 activeborder '
                         // onClick={handleClick}    
                     >Submit Your Order</button>
                 </form>
