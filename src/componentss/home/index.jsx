@@ -139,7 +139,7 @@ const Home = () => {
                             <img
                             src="/img/demo.jpg"
                             alt=""
-                            className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-primary-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
                                 <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
@@ -153,7 +153,7 @@ const Home = () => {
                             <img
                             src="/img/demo.jpg"
                             alt=""
-                            className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-primary-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
                                 <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
@@ -167,7 +167,7 @@ const Home = () => {
                             <img
                             src="/img/demo.jpg"
                             alt=""
-                            className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-primary-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
                                 <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
