@@ -135,7 +135,7 @@ const Home = () => {
                     >
                         <div className="flex flex-col items-center md:items-start">
                             <img
-                            src="/src/img/demo.jpg"
+                            src="/src/assets/img/demo.jpg"
                             alt=""
                             className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
@@ -149,7 +149,7 @@ const Home = () => {
 
                         <div className="flex pt-8 md:pt-0 flex-col items-center md:items-start">
                             <img
-                            src="/src/img/demo.jpg"
+                            src="/src/assets/img/demo.jpg"
                             alt=""
                             className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
@@ -163,7 +163,7 @@ const Home = () => {
 
                         <div className="flex flex-col items-center pt-8 md:pt-0 md:items-start">
                             <img
-                            src="/src/img/demo.jpg"
+                            src="/src/assets/img/demo.jpg"
                             alt=""
                             className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
