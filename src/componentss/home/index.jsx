@@ -1,6 +1,8 @@
 import Aos from 'aos';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll';
+import myImages from "/src/assets/img/demo.jpg"
+import myVideo from "/src/assets/img/demovid.mp4"
 
 const Home = () => {
     useEffect(() => {
@@ -135,7 +137,7 @@ const Home = () => {
                     >
                         <div className="flex flex-col items-center md:items-start">
                             <img
-                            src="/src/assets/img/demo.jpg"
+                            src={myImages}
                             alt=""
                             className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
@@ -149,7 +151,7 @@ const Home = () => {
 
                         <div className="flex pt-8 md:pt-0 flex-col items-center md:items-start">
                             <img
-                            src="/src/assets/img/demo.jpg"
+                            src={myImages}
                             alt=""
                             className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
@@ -163,7 +165,7 @@ const Home = () => {
 
                         <div className="flex flex-col items-center pt-8 md:pt-0 md:items-start">
                             <img
-                            src="/src/assets/img/demo.jpg"
+                            src={myImages}
                             alt=""
                             className="border border-gray-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
@@ -180,7 +182,7 @@ const Home = () => {
 
                 <div className="flex flex-col items-center justify-center min-h-[25rem] md:min-h-[32rem] lg:min-h-[35rem] md:pt-10 lg:pt-40" data-aos="fade-up">
                     <div>
-                        <video src="/src/img/demovid.mp4" className="shadow border-2 border-primary-600 rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"></video>
+                        <video src={myVideo} className="shadow border-2 border-primary-600 rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"></video>
                     </div>
                     <div className="text-center mt-4">
                         <Link to="target" smooth={true} duration={700}>
@@ -197,7 +199,7 @@ const Home = () => {
 
         <div className='bg-primary-700 min-h-[200rem] pt-9 md:pt-10'>
             <div className="flex justify-center mt-0 md:mt-32 w[50rem]  min-h[30rem] md:min-h[40rem] lg:min-h[45rem] " data-aos="fade-up">
-                <img src="/src/img/demo.jpg" alt="bigimg" className='h-[15rem] md:h-[22rem] lg:h-[25rem] w-[17rem] md:w-[35rem] lg:w-[40rem] border-2 border-primary-600' />
+                <img src={myImages} alt="bigimg" className='h-[15rem] md:h-[22rem] lg:h-[25rem] w-[17rem] md:w-[35rem] lg:w-[40rem] border-2 border-primary-600' />
             </div>
 
             <div className='m-12 text-left -pl-[1rem] md:pl-[2rem] lg:pl-[8rem] lg:pl58 text-primary-400' data-aos="slide-right">
@@ -209,7 +211,7 @@ const Home = () => {
 
             <div className='flex flex-col justify-center items-center min-h-[30rem] md:min-h-[40rem] pt-[1rem] md:pt-[1rem] lg:pt-[1rem]' data-aos="fade-up">
                 <div>
-                    <img src="/src/img/demo.jpg" alt="bigimg" className='border-2 border-primary-600 rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]' />
+                    <img src={myImages} alt="bigimg" className='border-2 border-primary-600 rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]' />
                 </div>
                 <Link to='targetform' smooth={true} duration={800}>
                     <button className='rounded p-1 md:p-2 mt-5 text-lg md:text-lg text-gray-300 bg-primary-600 active:bg-yellow-700 duration-200'>Yes, I want to order now</button>
