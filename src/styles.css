@@ -16,6 +16,9 @@
     @apply 
 } */
 
+/* .bgprimary-300{
+  color: #165283;
+} */
 
 @layer utilities {
     /* Custom utility to hide spinners in number inputs */
