@@ -111,7 +111,7 @@ const Home = () => {
     <div className=''>
         <div className='bg-primary-300 md:h-[85rem] lg:h-[88rem] border border-primary400'>
             <div className="pt-0">
-                <marquee behavior="" direction="" className="flex bg-primary-400 h-[7rem] pt-9">
+                <marquee behavior="" direction="" className="flex bg-primary-600 h-[7rem] pt-9">
                     <span className=' spa' data-aos="fade">Discount Sale + Free Delivery + Payment on delivery </span>
                     <span className='spa ml-14 ' data-aos="fade">Discount Sale + Free Delivery + Payment on delivery </span>
                     <span className='spa ml-14 ' data-aos="fade">Discount Sale + Free Delivery + Payment on delivery </span>
