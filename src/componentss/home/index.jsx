@@ -137,12 +137,12 @@ const Home = () => {
                             <img
                             src="/img/realImg/bed2.jpg"
                             alt=""
-                            className="border border-primary-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-primary-600 shadow-2xl rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
-                                <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
+                                <h4 className='text-yellow-600 text-xl'>Pressure Relief</h4>
                                 <a href="" className="underline text-gray-600">
-                                    Discover
+                                    explore
                                 </a>
                             </div>
                         </div>
@@ -151,26 +151,26 @@ const Home = () => {
                             <img
                             src="/img/realImg/bed1.jpg"
                             alt=""
-                            className="border border-primary-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-primary-600 shadow-2xl rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
-                                <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
+                                <h4 className='text-yellow-600 text-xl'>High-Quality Materials</h4>
                                 <a href="" className="underline text-gray-600">
-                                    Discover
+                                    explore
                                 </a>
                             </div>
                         </div>
 
                         <div className="flex flex-col items-center pt-8 md:pt-0 md:items-start">
                             <img
-                            src="/img/realImg/1688_image_share_82ea7aac610647c328e6cf4686acc171.jpg"
+                            src="/img/realImg/bed4.jpg"
                             alt=""
-                            className="border border-primary-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
+                            className="border border-primary-600 shadow-2xl rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
                             <div className="pt-5 pl-1 text-center md:text-left">
-                                <h4 className='text-yellow-600 text-xl'>Lorem ipsum dolor</h4>
+                                <h4 className='text-yellow-600 text-xl'>Spinal Alignment</h4>
                                 <a href="" className="underline text-gray-600">
-                                    Discover
+                                    explore
                                 </a>
                             </div>
                         </div>
@@ -180,15 +180,15 @@ const Home = () => {
 
                 <div className="flex flex-col items-center justify-center min-h-[25rem] md:min-h-[32rem] lg:min-h-[35rem] md:pt-10 lg:pt-40" data-aos="fade-up">
                     <div>
-                        <video src="/img/realVid/bed.mp4" autoPlay controls loop muted className="shadow border-2 border-primary-600 rounded w-[15rem] md:w-[15rem] h-[15rem] md:h-[18rem]"></video>
+                        <video src="/img/realVid/bed.mp4" autoPlay controls loop muted className="shadow border-2 border-primary-600 rounded w-[15rem] md:w-[25rem] h-[15rem] md:h-[18rem]"></video>
                     </div>
+                    <p className="mt-2 text-primary-600" data-aos="slide-up">I love this</p>
                     <div className="text-center mt-4">
                         <Link to="target" smooth={true} duration={700}>
                             <button className="rounded  p-3 md:p-2 text-sm md:text-lg text-gray-300 bg-primary-600 active:bg-yellow-800 duration-300">
                                 Yes! I want to order now
                             </button>
                         </Link> 
-                        <p className="mt-2 text-primary-600" data-aos="slide-up">Work smart</p>
                     </div>
                 </div>
 
@@ -197,19 +197,22 @@ const Home = () => {
 
         <div className='bg-primary-700 min-h-[200rem] pt-9 md:pt-10'>
             <div className="flex justify-center mt-0 md:mt-32 w[50rem]  min-h[30rem] md:min-h[40rem] lg:min-h[45rem] " data-aos="fade-up">
-                <img src="/img/realImg/Screenshot_20250127-220038~2.jpg" alt="bigimg" className='h-[15rem] md:h-[22rem] lg:h-[25rem] w-[17rem] md:w-[35rem] lg:w-[40rem] border-2 border-primary-600' />
+                <img src="/img/realImg/bed7.jpg" alt="bigimg" className='h-[15rem] md:h-[22rem] lg:h-[25rem] w-[17rem] md:w-[35rem] lg:w-[40rem] border-2 border-primary-600' />
             </div>
 
             <div className='m-12 text-left -pl-[1rem] md:pl-[2rem] lg:pl-[8rem] lg:pl58 text-primary-400' data-aos="slide-right">
                 <h4 className='pl-1 font-bold text-md md:text-2xl text-yellow-700'>Reasons why you will love this product</h4>
-                <p className='pt-4 text-sm md:text-lg text-primary-600'>1. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <p className='text-sm md:text-lg text-primary-600'>2. Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p className='pt-4 text-sm md:text-lg text-primary-600'>1. Perfect Spinal Support</p>
+                <p className='text-sm md:text-lg text-primary-600'>2. Unmatched Comfort</p>
+                <p className='text-sm md:text-lg text-primary-600'>3. Pressure Relief Technology</p>
+                <p className='text-sm md:text-lg text-primary-600'>4. Advanced Cooling System</p>
+                <p className='text-sm md:text-lg text-primary-600'>5. Durability & Longevity</p>
             </div>
 
 
             <div className='flex flex-col justify-center items-center min-h-[30rem] md:min-h-[40rem] pt-[1rem] md:pt-[1rem] lg:pt-[1rem]' data-aos="fade-up">
                 <div>
-                    <img src="/img/realImg/1738234415813.jpg" alt="bigim" className='border-2 border-primary-600 rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]' />
+                    <img src="/img/realImg/bed8.jpg" alt="bigim" className='border-2 border-primary-600 rounded w-[12rem] md:w-[20rem] h-[15rem] md:h-[22rem]' />
                 </div>
                 <Link to='targetform' smooth={true} duration={800}>
                     <button className='rounded p-1 md:p-2 mt-5 text-lg md:text-lg text-gray-300 bg-primary-600 active:bg-yellow-700 duration-200'>Yes, I want to order now</button>
@@ -229,16 +232,16 @@ const Home = () => {
                 
                 <div className='text-center border-b border-primary-600 h-[13rem] md:h-[15rem] pt-6'>
                     <h4 className='text-xl text-gray-800 md:text-3xl font-bold underline'>1 Set</h4>
-                    <h4 className='font-semilight text-lg md:text-2xl'>Original Price <span className='text-primary-500 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>#250,000</span></h4>
-                    <h4 className='font-semibold sm:font-bold text-gray-700 text-xl md:text-3xl'>✅Discount Price <span className='text-green-600 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>#200,000</span></h4>
+                    <h4 className='font-semilight text-gray-600 text-lg md:text-2xl'>Original Price <span className='text-primary-500 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>₦250,000</span></h4>
+                    <h4 className='font-semibold sm:font-bold text-gray-700 text-xl md:text-3xl'>✅Discount Price <span className='text-green-800 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>₦200,000</span></h4>
                     <p className='text-lg md:text-2xl font-light'>(free delivery)</p>
                     <p className='text-lg md:text-2xl font-light'>(payment on delivery)</p>
                 </div>
 
                 <div className='text-center h-[15rem] pt-6'>
                     <h4 className='text-xl md:text-3xl font-bold underline'>2 Set</h4>
-                    <h4 className='font-semilight text-gray-600 text-lg md:text-2xl'>Original Price <span className='text-primary-500 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>#650,000</span></h4>
-                    <h4 className='font-semibold text-gray-700 sm:font-bold text-xl md:text-3xl'>✅Discount Price <span className='text-green-600 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>390,000</span></h4>
+                    <h4 className='font-semilight text-gray-600 text-lg md:text-2xl'>Original Price <span className='text-primary-500 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>₦400,000</span></h4>
+                    <h4 className='font-semibold text-gray-700 sm:font-bold text-xl md:text-3xl'>✅Discount Price <span className='text-green-800 font-bold text-3xl md:text-4xl ml-2 md:ml-6'>₦390,000</span></h4>
                     <p className='text-lg md:text-2xl font-light'>(free delivery)</p>
                     <p className='text-lg md:text-2xl font-light'>(payment on delivery)</p>
                 </div>
@@ -323,24 +326,24 @@ const Home = () => {
                             <li className='p-2'>
                                 <input 
                                     type="radio" 
-                                    value="1 set - ₦00,000"
+                                    value="1 set - ₦200,000"
                                     onChange={handleChange}
                                     name='quantity'
                                     checked={selectedValue === "1 set - ₦00,000"}    
                                 />
                                     
-                                <label className='pl-2 font-semibold text-gray-800'>1 set - ₦00,000</label>
+                                <label className='pl-2 font-semibold text-gray-800'>1 set - ₦200,000</label>
                             </li>
                             <li className='p-2'>
                                 <input 
                                     type="radio" 
-                                    value="2 set - ₦00,000"
+                                    value="2 set - ₦390,000"
                                     onChange={handleChange}
                                     name='quantity'
                                     checked={selectedValue === "2 set - ₦00,000"}    
 
                                 />
-                                <label className='pl-2 font-semibold text-gray-700'>2 set - ₦00,000</label>
+                                <label className='pl-2 font-semibold text-gray-800'>2 set - ₦390,000</label>
                             </li>
                        </ul>
                     </div>
