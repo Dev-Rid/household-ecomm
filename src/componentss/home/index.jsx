@@ -135,7 +135,7 @@ const Home = () => {
                     >
                         <div className="flex flex-col items-center md:items-start">
                             <img
-                            src="/public/img/realImg/bed2.jpg"
+                            src="/img/realImg/bed2.jpg"
                             alt=""
                             className="border border-primary-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
