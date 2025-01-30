@@ -1,8 +1,6 @@
 import Aos from 'aos';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll';
-// import myImages from "/src/assets/img/demo.jpg"
-// import myVideo from "/src/assets/img/demovid.mp4"
 
 const Home = () => {
     useEffect(() => {
@@ -137,7 +135,7 @@ const Home = () => {
                     >
                         <div className="flex flex-col items-center md:items-start">
                             <img
-                            src="/src/assets/img/realImg/bed2.jpg"
+                            src="/public/img/realImg/bed2.jpg"
                             alt=""
                             className="border border-primary-600 shadow-2xl rounded w-[12rem] md:w-[15rem] h-[15rem] md:h-[18rem]"
                             />
